@@ -12,9 +12,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<Question> hardq;
     [SerializeField] private List<Question> mediumq;
     [SerializeField] private InputField answerfield;
-    
+
     private int goodAnswers;
-    
+
     public Button easy;
     public Button medium;
     public Button hard;
@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     public GameObject img;
     public GameObject start;
     public GameObject text;
-    
+
     private bool kaas;
     private bool kees;
     private bool kuus;
@@ -31,8 +31,8 @@ public class GameManager : MonoBehaviour
     private int teste;
     private int HardNumber;
 
-    public int hee = 5; 
-        
+    public int hee = 5;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,9 +49,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    
+
     void NextQuestion0()
     {
         questions.RemoveAt(questionNumber);
@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
         questionImage.sprite = questions[questionNumber].picture;
         Debug.Log(questions[questionNumber].answer);
     }
+
     void NextQuestion1()
     {
         mediumq.RemoveAt(teste);
@@ -66,6 +67,7 @@ public class GameManager : MonoBehaviour
         questionImage.sprite = mediumq[teste].picture;
         Debug.Log(mediumq[teste].answer);
     }
+
     void NextQuestion2()
     {
         hardq.RemoveAt(HardNumber);
@@ -85,6 +87,7 @@ public class GameManager : MonoBehaviour
         start.gameObject.SetActive(false);
         text.gameObject.SetActive(true);
     }
+
     public void test1()
     {
         hee = 1;
@@ -96,6 +99,7 @@ public class GameManager : MonoBehaviour
         start.gameObject.SetActive(false);
         text.gameObject.SetActive(true);
     }
+
     public void test2()
     {
         hee = 2;
@@ -107,6 +111,7 @@ public class GameManager : MonoBehaviour
         start.gameObject.SetActive(false);
         text.gameObject.SetActive(true);
     }
+
     public void CheckAnswer()
     {
         if (answerfield.text == questions[questionNumber].answer && hee == 0)
@@ -114,15 +119,16 @@ public class GameManager : MonoBehaviour
             Debug.Log("goed zo");
             NextQuestion0();
             kaas = true;
-                                             answerfield.text = "";
+            answerfield.text = "";
         }
         else if (kaas)
         {
             Debug.Log("fout");
-                        NextQuestion0();
-                        answerfield.text = "";
-                     
+            NextQuestion0();
+            answerfield.text = "";
+
         }
+
         if (answerfield.text == mediumq[teste].answer && hee == 1)
         {
             Debug.Log("goed");
@@ -135,8 +141,9 @@ public class GameManager : MonoBehaviour
             Debug.Log("test");
             NextQuestion1();
             answerfield.text = "";
-            
+
         }
+
         if (answerfield.text == hardq[HardNumber].answer && hee == 2)
         {
             Debug.Log("goed");
@@ -149,9 +156,9 @@ public class GameManager : MonoBehaviour
             Debug.Log("nee");
             NextQuestion2();
             answerfield.text = "";
-           
+
         }
-        
     }
+} 
+        
     
-}

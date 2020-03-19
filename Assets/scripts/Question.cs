@@ -7,5 +7,4 @@ public class Question
 {
     public Sprite picture;
     public string answer;
-    public int difficulty;
 }
