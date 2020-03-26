@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9afd3f51-9b7f-43b1-8738-b8e2c90897ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Blok3Project3-master/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blok3Project3-master/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blok3Project3-master/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blok3Project3-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blok3Project3-master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scripts/Question.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/Question.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +17,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/game.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scripts/Question.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -78,7 +77,9 @@
       <option name="presentableId" value="Default" />
       <updated>1583755836174</updated>
       <workItem from="1583755843370" duration="9456000" />
-      <workItem from="1584619240289" duration="2348000" />
+      <workItem from="1584619240289" duration="5383000" />
+      <workItem from="1584969046983" duration="1788000" />
+      <workItem from="1584970888636" duration="1834000" />
     </task>
     <servers />
   </component>
@@ -92,7 +93,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -110,13 +113,13 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/scripts/GameManager.cs</url>
-          <line>37</line>
+          <line>40</line>
           <properties documentPath="$PROJECT_DIR$/Assets/scripts/GameManager.cs" initialLine="37">
             <startOffsets>
-              <option value="933" />
+              <option value="1003" />
             </startOffsets>
             <endOffsets>
-              <option value="934" />
+              <option value="1004" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
